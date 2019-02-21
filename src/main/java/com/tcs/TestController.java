@@ -12,7 +12,7 @@ public class TestController {
 	@RequestMapping("/hello")
 	public ModelAndView showMessage(
 			@RequestParam(value = "name", required = false, defaultValue = "Skyguide") String name) {
-		System.out.println("in controller");
+		System.out.println("in controller");//Invalid
  
 		ModelAndView mv = new ModelAndView("dummyworld");
 		mv.addObject("message", message);
