@@ -11,9 +11,9 @@ public class TestController {
 	@RequestMapping("/hello")
 	public ModelAndView showMessage(
 			@RequestParam(value = "name", required = false, defaultValue = "Skyguide") String name) {
-		System.out.println("in controller");//Invalid
+		System.out.println("in controller");//Invalid comment to be removed
  
-		ModelAndView mv = new ModelAndView("dummyworld");//Invalid
+		ModelAndView mv = new ModelAndView("dummyworld");//Invalid to be deleted
 		mv.addObject("message", message);
 		mv.addObject("name", name);
 		return mv;
